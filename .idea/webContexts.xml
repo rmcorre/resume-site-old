@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/candidate/candidateAdmin.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/candidate" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/candidate/createCandidate.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/candidate" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/candidate/createCandidateForm.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/candidate" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/candidate/list.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/candidate" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/candidateAddress/createCandidateAddress.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/candidateAddress" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/candidateAddress/list.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/candidateAddress" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/education/list.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/education" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/employer/admin.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/employer" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/employer/adminEmployer.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/employer" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/employer/create.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/employer" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/employer/employerAddressAdmin.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/employer" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/employer/employerAdmin.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/employer" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/employerAddress/create.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/employerAddress" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/employerAddress/update.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/employerAddress" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/footer.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/header.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/identity/create.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/identity" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/identity/createConfirmation.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/identity" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/identityAddress/create.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/identityAddress" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/industry/create.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/industry" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/industryKnowledge/industryKnowledgeCreate.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/industryKnowledge" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/portfolio.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/portfolio/admin.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/portfolio" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/portfolio/create.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/portfolio" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/portfolio/portfolioAdmin.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/portfolio" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/profile/admin.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/profile" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/profile/adminProfile.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/profile" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/profile/create.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/profile" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/profile/createProfile.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/profile" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/profile/edit.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/profile" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/profile/list.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/profile" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/profile/update.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/profile" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/profile/updateProfile.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/profile" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/profileAddress/adminProfileAddress.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/profileAddress" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/profileAddress/create.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/profileAddress" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/profileAddress/createProfileAddress.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/profileAddress" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/profileAddress/edit.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/profileAddress" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/profileAddress/update.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/profileAddress" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/profileAddress/updateProfileAddress.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/profileAddress" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/urls.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/wizard.jsp" value="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view" />
+      </map>
+    </option>
+  </component>
+</project>

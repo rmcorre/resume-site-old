@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context
+            https://www.springframework.org/schema/context/spring-context.xsd
+            http://www.springframework.org/schema/mvc
+            http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+
+    <bean class="org.academiadecodigo.codezillas.SpringBootstrap"/>
+
+    <bean class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">
+        <property name="locations" value="classpath:portfolioSite.properties"/>
+    </bean>
+
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/view/"/>
+        <property name="suffix" value=".jsp" />
+    </bean>
+
+
+    <!-- Use spring servlet for all requests, including static resources -->
+    <mvc:default-servlet-handler/>
+
+    <!-- Use @Controller, @Service... annotations -->
+    <mvc:annotation-driven/>
+
+    <mvc:resources mapping="/webjars/**" location="classpath:/META-INF/resources/webjars/"/>
+    <mvc:resources mapping="/resources/**" location="/resources/" />
+
+    <!-- Base package to search for spring beans   -->
+    <context:component-scan base-package="org.academiadecodigo.codezillas"/>
+
+    <import resource="persistence.xml"/>
+
+</beans>

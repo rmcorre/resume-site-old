@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+       profile="dev">
+
+    <!-- Enable support for JPA annotations -->
+    <bean class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor"/>
+
+    <!-- H2 console -->
+    <!-- <constructor-arg> element must be passed a list as below otherwise, "createWebServer" method -->
+    <!-- will be highlighted in red and intellij will complain about it being an unresolved method -->
+    <bean id="h2WebServer" class="org.h2.tools.Server" factory-method="createWebServer" init-method="start"
+          destroy-method="stop">
+        <constructor-arg>
+            <list>
+                <value>-web</value>
+                <value>-webAllowOthers</value>
+                <value>-webDaemon</value>
+                <value>-webPort</value>
+                <value>${dev.h2.port}</value>
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <!-- H2 embedded database: the database URL for connecting to a local database is
+        jdbc:h2:[file:][<path>]<databaseName>.
+        The prefix file: is optional. If no or only a relative path is used, then the current working
+        directory is used as a starting point. The case sensitivity of the path and database name depend
+        on the operating system, however it is recommended to use lowercase letters only. The database
+        name must be at least three characters long (a limitation of File.createTempFile). The database
+        name must not contain a semicolon. To point to the user home directory, use ~/,
+        as in: jdbc:h2:~/test. -->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="org.h2.Driver"/>
+        <property name="url" value="${dev.h2.location}${dev.jdbc.database};${h2.toUppercase.false}"/>
+        <property name="username" value="${dev.jdbc.username}"/>
+        <property name="password" value="${dev.jdbc.password}"/>
+    </bean>
+
+    <bean id="emFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="packagesToScan" value="org.academiadecodigo.codezillas"/>
+        <property name="jpaVendorAdapter">
+            <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"/>
+        </property>
+        <property name="jpaProperties">
+            <map>
+                <entry key="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+                <entry key="hibernate.format_sql" value="true" />
+                <entry key="hibernate.use_sql_comments" value="true"/>
+                <entry key="hibernate.show_sql" value="${dev.debug}" />
+                <entry key="hibernate.hbm2ddl.auto" value="${dev.schema.auto}"/>
+
+                <!-- Insert test data if dev.schema.auto property set to create -->
+                <entry key="hibernate.hbm2ddl.import_files" value="db/create-schema.sql"/>
+                <entry key="hibernate.hbm2ddl.import_files_sql_extractor"
+                       value="org.hibernate.tool.hbm2ddl.MultipleLinesSqlCommandExtractor"/>
+            </map>
+        </property>
+    </bean>
+
+    <!-- Setup Hibernate Session Factory -->
+<!--    <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">-->
+<!--        <property name="dataSource" ref="dataSource" />-->
+<!--        <property name="packagesToScan" value="org.academiadecodigo.codezillas.persistence.model" />-->
+<!--        <property name="hibernateProperties">-->
+<!--            <props>-->
+<!--                <prop key="hibernate.dialect">org.hibernate.dialect.H2Dialect</prop>-->
+<!--                <prop key="hibernate.show_sql">true</prop>-->
+<!--                <prop key="hibernate.hbm2ddl.auto">create</prop>-->
+<!--                <prop key="hibernate.hbm2ddl.import_files">db/create-schema.sql</prop>-->
+<!--                <prop key="hibernate.hbm2ddl.import_files_sql_extractor">org.hibernate.tool.hbm2ddl.MultipleLinesSqlCommandExtractor</prop>-->
+<!--            </props>-->
+<!--        </property>-->
+<!--    </bean>-->
+
+</beans>
