@@ -1,4 +1,4 @@
-# resume-site
+# resume-site-old
 First iteration of a web app where I can tailor my resume for different employment opportunities.
 
 Unfortunately, I forgot to use Git but spent about 6 months working on it from May-2020 to November-2020.
